@@ -122,4 +122,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   })
 
+  // ***
+  // faq
+  $(".panel-heading").click(function (e) {
+    $(this)
+      .toggleClass("in")
+      .next()
+      .slideToggle();
+    $(".panel-heading")
+      .not(this)
+      .removeClass("in")
+      .next()
+      .slideUp();
+    e.preventDefault();
+  });
+
 });
