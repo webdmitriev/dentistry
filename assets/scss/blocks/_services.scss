@@ -1,0 +1,100 @@
+.services {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-block: 40px;
+  z-index: 40;
+  .h2 {
+    margin-bottom: 24px;
+  }
+  .services-items {
+    gap: 10px;
+    .services-item {
+      position: relative;
+      display: block;
+      width: 100%;
+      max-width: calc(25% - 8px);
+      height: inherit;
+      padding: 16px;
+      aspect-ratio: 1 / 1;
+      background-color: var(--gray-color);
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: url("../img/icons/icon-arrow-right.svg") center / contain no-repeat;
+        z-index: 8;
+      }
+      .services-item__label {
+        display: block;
+        width: 100%;
+        padding-right: 40px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--text-color);
+        transition: all 0.3s ease;
+      }
+      .services-item__image {
+        position: absolute;
+        right: -20px;
+        bottom: -20px;
+        display: block;
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+  .services .h2 {
+    text-align: center;
+  }
+  .services .services-items {
+    justify-content: center;
+  }
+  .services .services-items .services-item {
+    max-width: 34%;
+  }
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .services .services-items .services-item {
+    max-width: 48%;
+  }
+}
+@media (max-width: 576px) {
+  .services .services-items .services-item {
+    max-width: 60%;
+  }
+  .services .services-items .services-item .services-item__image {
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (max-width: 460px) {
+  .services .services-items .services-item {
+    max-width: 70%;
+  }
+  .services .services-items .services-item .services-item__label {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .services .services-items .services-item {
+    max-width: 80%;
+  }
+}

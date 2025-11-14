@@ -7,4 +7,15 @@
     background-color: var(--accent-color);
     border-radius: 6px;
   }
+
+  .services .services-items .services-item:hover {
+    background-color: var(--accent-color);
+    .services-item__label {
+      color: var(--white-color);
+    }
+    .services-item__image {
+      right: 0;
+      bottom: 0;
+    }
+  }
 }
