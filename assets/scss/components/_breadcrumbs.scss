@@ -1,0 +1,30 @@
+.breadcrumbs {
+  gap: 8px 12px;
+  a {
+    display: block;
+    color: var(--text-color);
+    transition: all 0.4s ease;
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .breadcrumbs {
+    gap: 6px 8px;
+  }
+  .breadcrumbs a,
+  .breadcrumbs span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 460px) {
+}
+@media (max-width: 400px) {
+}

@@ -1,4 +1,7 @@
 @media (hover: hover) and (pointer: fine) {
+  .breadcrumbs a:hover {
+    color: var(--accent-color);
+  }
 }
 
 // if mobile
