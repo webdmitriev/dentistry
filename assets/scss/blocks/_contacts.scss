@@ -1,0 +1,101 @@
+.contacts {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-block: 40px;
+  z-index: 40;
+  .h2 {
+    margin-bottom: 40px;
+  }
+  .contacts-wrap {
+    gap: 24px;
+  }
+  iframe,
+  .contacts-block {
+    display: block;
+    width: 100%;
+    max-width: calc(50% - 12px);
+    border-radius: 24px;
+  }
+  iframe {
+  }
+  .contacts-block {
+    padding: 32px;
+    background-color: var(--gray-color);
+    .contacts-block__item {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin-bottom: 24px;
+      padding-left: 42px;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 22px;
+      color: var(--text-color);
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: block;
+        width: 28px;
+        height: 28px;
+        transform: translateY(-50%);
+      }
+      &.icon-location:before {
+        background: url("../img/icons/icon-location.svg") center / contain no-repeat;
+      }
+      &.icon-phone:before {
+        background: url("../img/icons/icon-phone.svg") center / contain no-repeat;
+      }
+      &.icon-email:before {
+        background: url("../img/icons/icon-email.svg") center / contain no-repeat;
+      }
+    }
+    .contacts-socials {
+      margin-top: 60px;
+      a {
+        display: block;
+        width: 54px;
+        height: 54px;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        &:not(:last-child) {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+  .contacts .contacts-block {
+    padding: 18px;
+  }
+  .contacts .contacts-block .contacts-block__item {
+    font-size: 19px;
+  }
+  .contacts iframe {
+    height: 320px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts iframe,
+  .contacts .contacts-block {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 460px) {
+}
+@media (max-width: 400px) {
+}

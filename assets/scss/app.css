@@ -849,7 +849,7 @@ textarea {
   align-items: center;
   align-content: center;
   width: 100%;
-  min-height: 50vh;
+  min-height: 200px;
   padding-block: 80px;
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -1716,6 +1716,95 @@ a.btn {
   .faq .faq-accardeon .panel .panel-collapse .panel-body {
     padding: 14px 16px;
     font-size: 14px;
+  }
+}
+.contacts {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-block: 40px;
+  z-index: 40;
+}
+.contacts .h2 {
+  margin-bottom: 40px;
+}
+.contacts .contacts-wrap {
+  gap: 24px;
+}
+.contacts iframe,
+.contacts .contacts-block {
+  display: block;
+  width: 100%;
+  max-width: calc(50% - 12px);
+  border-radius: 24px;
+}
+.contacts .contacts-block {
+  padding: 32px;
+  background-color: var(--gray-color);
+}
+.contacts .contacts-block .contacts-block__item {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  padding-left: 42px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--text-color);
+}
+.contacts .contacts-block .contacts-block__item:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 28px;
+  height: 28px;
+  transform: translateY(-50%);
+}
+.contacts .contacts-block .contacts-block__item.icon-location:before {
+  background: url("../img/icons/icon-location.svg") center/contain no-repeat;
+}
+.contacts .contacts-block .contacts-block__item.icon-phone:before {
+  background: url("../img/icons/icon-phone.svg") center/contain no-repeat;
+}
+.contacts .contacts-block .contacts-block__item.icon-email:before {
+  background: url("../img/icons/icon-email.svg") center/contain no-repeat;
+}
+.contacts .contacts-block .contacts-socials {
+  margin-top: 60px;
+}
+.contacts .contacts-block .contacts-socials a {
+  display: block;
+  width: 54px;
+  height: 54px;
+}
+.contacts .contacts-block .contacts-socials a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.contacts .contacts-block .contacts-socials a:not(:last-child) {
+  margin-right: 16px;
+}
+
+@media (max-width: 991px) {
+  .contacts .contacts-block {
+    padding: 18px;
+  }
+  .contacts .contacts-block .contacts-block__item {
+    font-size: 19px;
+  }
+  .contacts iframe {
+    height: 320px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts iframe,
+  .contacts .contacts-block {
+    max-width: 100%;
   }
 }
 .footer {
