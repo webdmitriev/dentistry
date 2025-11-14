@@ -98,11 +98,40 @@
 				</div>
 			</div>
 
-			<div class="section">
+			<div class="reviews">
 				<div class="container">
-					<!-- ццц -->
+					<h2 class="h2">Отзывы</h2>
+					<div class="reviews-slider">
+						<div class="reviews-slide">
+							<div class="reviews-slide__icon"><img src="./assets/img/icons/icon-kiwi.svg" alt="alto" loading="lazy" decoding="async" /></div>
+							<img src="./assets/img/reviews/image-01.jpg" alt="alto" loading="lazy" decoding="async" class="reviews-slide__image" />
+							<button class="reviews-slide__play" data-video-popup="https://rutube.ru/play/embed/96987b56ab397e00835c20345c91520c/"></button>
+						</div>
+						<div class="reviews-slide">
+							<div class="reviews-slide__icon"><img src="./assets/img/icons/icon-kiwi.svg" alt="alto" loading="lazy" decoding="async" /></div>
+							<img src="./assets/img/reviews/image-01.jpg" alt="alto" loading="lazy" decoding="async" class="reviews-slide__image" />
+							<button class="reviews-slide__play" data-video-popup="https://rutube.ru/play/embed/deedc3a83ab884322176ba259b94d112/"></button>
+						</div>
+						<div class="reviews-slide">
+							<div class="reviews-slide__icon"><img src="./assets/img/icons/icon-kiwi.svg" alt="alto" loading="lazy" decoding="async" /></div>
+							<img src="./assets/img/reviews/image-01.jpg" alt="alto" loading="lazy" decoding="async" class="reviews-slide__image" />
+							<button class="reviews-slide__play" data-video-popup="https://rutube.ru/play/embed/3d46f1cda7e20c2a8d3a8e3d99cb5cae/"></button>
+						</div>
+						<div class="reviews-slide">
+							<div class="reviews-slide__icon"><img src="./assets/img/icons/icon-kiwi.svg" alt="alto" loading="lazy" decoding="async" /></div>
+							<img src="./assets/img/reviews/image-01.jpg" alt="alto" loading="lazy" decoding="async" class="reviews-slide__image" />
+							<button class="reviews-slide__play" data-video-popup="https://rutube.ru/play/embed/0354cd30c4eb2083937de29f21d08cc4/"></button>
+						</div>
+						<div class="reviews-slide">
+							<div class="reviews-slide__icon"><img src="./assets/img/icons/icon-kiwi.svg" alt="alto" loading="lazy" decoding="async" /></div>
+							<img src="./assets/img/reviews/image-01.jpg" alt="alto" loading="lazy" decoding="async" class="reviews-slide__image" />
+							<button class="reviews-slide__play" data-video-popup="https://rutube.ru/play/embed/e05b7a4ba70d519994db8c9d685e9096/"></button>
+						</div>
+					</div>
 				</div>
 			</div>
+
+			<!-- <iframe width="720" height="405" src="" style="border: none;" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> -->
 
 			<div class="section">
 				<div class="container">
@@ -123,6 +152,16 @@
 			</footer>
 
 			<div class="developer"><p>developer</p></div>
+
+			<div class="video-popup" id="videoPopup">
+				<div class="video-popup__overlay"></div>
+				<div class="video-popup__container">
+					<button class="video-popup__close" aria-label="Закрыть видео"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+					<div class="video-popup__content">
+						<iframe class="video-popup__iframe" width="720" height="405" style="border: none;" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<script src="./assets/js/jquery-3.6.1.min.js"></script>
