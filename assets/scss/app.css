@@ -757,6 +757,53 @@ a.btn {
     max-width: 100%;
   }
 }
+.worth {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-block: 60px;
+  background-color: var(--gray-color);
+  z-index: 40;
+}
+.worth .container {
+  gap: 24px;
+}
+.worth .h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.worth .line-items {
+  display: block;
+  width: 100%;
+}
+.worth .line-item {
+  padding-block: 12px;
+  border-top: 1px solid var(--accent-color);
+}
+.worth .line-item .descr {
+  font-weight: bold;
+}
+.worth .line-item .descr:nth-child(1) {
+  max-width: calc(100% - 120px);
+  padding-right: 40px;
+}
+.worth .line-item .descr:nth-child(2) {
+  max-width: 120px;
+  text-align: right;
+}
+.worth .line-item:last-child {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+@media (max-width: 576px) {
+  .worth {
+    padding-block: 40px;
+  }
+  .worth .line-item .descr:nth-child(1) {
+    font-weight: normal;
+    font-size: 15px;
+  }
+}
 .footer {
   position: relative;
   display: block;
