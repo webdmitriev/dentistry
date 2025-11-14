@@ -2,11 +2,9 @@
   .breadcrumbs a:hover {
     color: var(--accent-color);
   }
-}
 
-// if mobile
-// @media (hover: none) {
-//   .block-02 .projects-slider .projects-slide {
-//     .slide-title, .slide-subtitle { transform: translateY(0px);opacity: 1; }
-//   }
-// }
+  .btn.btn-primary:hover {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+  }
+}

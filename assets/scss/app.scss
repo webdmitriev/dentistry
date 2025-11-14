@@ -7,10 +7,14 @@
 // components
 @use "./components/h1";
 @use "./components/h2";
+@use "./components/h3";
+@use "./components/descr";
+@use "./components/btn";
 @use "./components/breadcrumbs";
 
 // blocks
 @use "./blocks/head";
+@use "./blocks/process";
 
 @use "./data/footer";
 @use "./data/popup";
