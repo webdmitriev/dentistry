@@ -1,4 +1,4 @@
-# www
+# Dentist project
 
 ---
 
@@ -9,18 +9,17 @@
 ## 🛠 Технологии
 
 - HTML, JS, SCSS
-- Animations
 
 ## 📸 Скриншоты
 
 | Home                                                                                  |
 | ------------------------------------------------------------------------------------- |
-| ![Onboarding](https://api.webdmitriev.com/wp-content/uploads/2025/10/nz-overseas.png) |
+| ![Home](https://api.webdmitriev.com/wp-content/uploads/2025/11/dentist-webdmitriev-com-scaled.jpg) |
 
 ## ⚙️ Установка
 
 1. Клонируйте репозиторий:
 
 ```bash
-git clone https://github.com/webdmitriev/nz-overseas
+git clone https://github.com/webdmitriev/dentistry
 ```
