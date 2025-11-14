@@ -1,5 +1,8 @@
 @use "./data/reset";
+@use "../slick/slick.min.css";
+@use "../slick/slick-theme.min.css";
 @use "../fonts/stylesheet.css";
+@use "./data/slick-lightbox.css";
 @use "./data/data";
 
 @use "./data/header";
@@ -16,6 +19,7 @@
 @use "./blocks/head";
 @use "./blocks/process";
 @use "./blocks/worth";
+@use "./blocks/comparison";
 
 @use "./data/footer";
 @use "./data/popup";

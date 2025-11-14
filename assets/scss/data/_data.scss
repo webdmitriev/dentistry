@@ -198,6 +198,35 @@ textarea {
   }
 }
 
+.slick-dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  li {
+    display: block;
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    button {
+      display: block;
+      width: 19px;
+      height: 19px;
+      padding: 0;
+      background-color: var(--gray-color);
+      border: 4px solid var(--white-color);
+      border-radius: 20px;
+      &:before {
+        display: none;
+      }
+    }
+    &.slick-active button {
+      background-color: var(--accent-color);
+    }
+  }
+}
+
 .developer {
   display: flex;
   flex-wrap: wrap;

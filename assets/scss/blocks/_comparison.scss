@@ -1,0 +1,43 @@
+.comparison {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-block: 40px;
+  z-index: 40;
+  .h2 {
+    margin-bottom: 24px;
+  }
+  .comparison-slider {
+    .comparison-slide {
+      width: 402px;
+      height: 534px;
+      margin-right: 16px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .comparison .comparison-slider .comparison-slide {
+    width: 340px;
+    height: 480px;
+    margin-right: 8px;
+  }
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 460px) {
+  .comparison .comparison-slider .comparison-slide {
+    width: 300px;
+    height: 420px;
+  }
+}
+@media (max-width: 400px) {
+}
